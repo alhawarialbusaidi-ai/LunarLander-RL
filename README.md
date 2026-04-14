@@ -1,19 +1,31 @@
-# LunarLander-RL
-Autonomous rocket landing using Proximal Policy Optimization (PPO) and Gymnasium. An implementation of Deep Reinforcement Learning for thrust-vector control
+🛠️ Technical Details
+Environment: 
 
-Environment: Gymnasium LunarLander-v3
-
-Algorithm: Proximal Policy Optimization (PPO)
+RL Algorithm: PPO (Proximal Policy Optimization)
 
 Library: Stable Baselines3
 
-Training: 100,000 timesteps in Google Colab
+Training Duration: 100,000 timesteps in Google Colab
 
-Physics Engine: Box2D simulation involving gravity, thrust-vectoring, and friction.
+Physics Engine: Box2D (Simulating gravity, wind, and thrust)
 
-⚙️ Engineering Application
-As a Mechanical Engineering student, I used this project to explore how Artificial Intelligence can handle complex control tasks that traditionally require manual PID tuning.
+⚙️ Engineering Connection
+As a Mechanical Engineering student, I used this project to explore how Artificial Intelligence can solve complex control problems.
 
 Control Challenge: The agent must manage 3-axis thrust (Main, Left, Right) to counteract gravity and lateral momentum.
 
-Optimization: The model is rewarded for a "soft landing" (zero velocity at impact) and penalized for crashing or using excessive fuel.
+Optimization: Instead of manual PID tuning, the PPO agent maximizes a reward function based on fuel efficiency and landing velocity.
+
+📂 Repository Contents
+Lunar_Lander_PPO.ipynb: The full Python source code and training logs.
+
+ppo_lunar_lander.zip: The pre-trained model weights (the "brain").
+
+requirements.txt: Necessary libraries to run the environment.
+
+🚀 How to Run
+Open the .ipynb file in Google Colab.
+
+Install dependencies:
+
+Run the cells to see the trained agent in action!
